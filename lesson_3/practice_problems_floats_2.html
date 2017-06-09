@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Practice Problems: Floats (2)</title>
+		<meta charset="UTF-8" />
+		<style>
+			p {
+        padding: 1em;
+        margin: 0;
+      }
+
+      main {
+        min-width: 600px;
+      }
+
+			#floated {
+		    background: #ecaa33;
+		    float: left;
+		    width: 20%;
+			}
+
+			main > p {
+		    background: #18aaff;
+		    /*clear: both;*/
+		    /*margin-left: 20%;*/
+		    float: right;
+		    width: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+      <div id="floated">
+        <p>This paragraph should appear on its own line.</p>
+      </div>
+      <p>This paragraph should appear below the div. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </main>
+	</body>
+</html>
+
+
+<!-- when an element is floated it only uses up as much of the space as it needs to display its contents. Since the text content is shorter than the with of the main element, it takes up less than the entire width of the container. To force it to be the same width as its container and therefore the same widtha s the blue paragraph, use width: 100% -->
+
+<!-- The elements will not sit side by side because there isn't enough space for the two elements to sit on the same row. Need to remember that a floated element will take up as much space as it needs for its content if it doesn't have a set width. To make it fit within the remaining width, you can add a width property to it like you did in the previous problems -->

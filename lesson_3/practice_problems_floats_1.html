@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<title>Practice Problems: Floats (1)</title>
+	<meta charset="UTF-8" />
+	<style>
+		body {
+			background: #cccccc;
+		}
+
+		section {
+			max-width: 1200px;
+			margin: 0 auto;
+			background: #ffffff;
+			/*overflow: hidden;*/
+		}
+
+		/*section:after {
+			display: block;
+			content: "";
+			clear: both;
+		}*/
+
+		article {
+			float: left;
+			width: 70%;
+			background: #ffffcc;
+			box-sizing: border-box;
+			padding-right: 30px;
+		}
+
+		aside {
+			/*float: right;
+			width: 300px;*/
+			background: #ccffcc;
+			overflow: hidden;
+		}
+
+		header {
+			float: left;
+			width: 15%;
+		}
+
+		footer {
+			clear: both;
+			background: #eeefff;
+		}
+	</style>
+</head>
+<body>
+	<section>
+			<header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis sollicitudin ligula, ac ultrices metus. Nullam nec tempor lorem, vitae pulvinar mauris. Maecenas gravida dui non sollicitudin condimentum. Praesent cursus efficitur urna, at consequat enim malesuada at. Donec sit amet consectetur tellus. Duis finibus purus ut magna tempus, sed aliquam massa iaculis. Nunc metus odio, convallis eu auctor quis, convallis eu elit. Vestibulum ullamcorper scelerisque erat, sit amet malesuada lacus imperdiet sed. Nullam et varius tortor. Nunc dignissim libero sed aliquam imperdiet. Ut mollis nibh ligula, ac mattis quam lobortis sagittis. Donec gravida orci nunc, in rutrum lorem aliquam sit amet. Phasellus id tellus arcu.</p>
+			</header>
+			<article>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus leo nibh, luctus sit amet ultrices in, feugiat tincidunt libero. Cras venenatis pharetra quam, id posuere lorem aliquam at. Nulla malesuada ultrices egestas. Proin congue bibendum nisl a dignissim. Phasellus dolor justo, gravida sed hendrerit id, egestas a nisi. Morbi ut erat id tellus convallis consectetur eu at odio. Pellentesque tincidunt a massa eu volutpat.</p>
+
+				<p>Donec fermentum massa eu consectetur placerat. Sed congue ex risus, ac fermentum nulla aliquet egestas. Aliquam vel neque posuere, tristique magna vitae, hendrerit leo. Aenean elementum dignissim sagittis. Proin ac finibus ipsum, eget vestibulum quam. Cras at dolor in orci tincidunt varius. Quisque quis diam sapien. Pellentesque dapibus sollicitudin mauris ac malesuada. Maecenas ultricies malesuada velit nec efficitur. Integer maximus viverra ultrices.</p>
+
+				<p>Aliquam ut libero vitae velit pellentesque aliquam. Donec consequat mollis elit. Etiam maximus sapien fringilla ullamcorper interdum. Aliquam sed cursus quam, eu sodales ante. Nam erat justo, maximus sed magna at, tristique aliquam lorem. Maecenas at felis vitae purus gravida dapibus. Nullam condimentum eleifend diam, nec vestibulum lorem tristique eget. Sed pharetra dapibus condimentum. Praesent in magna tincidunt, vestibulum neque vel, venenatis lacus. Aenean lobortis vestibulum eros.</p>
+
+				<p>Nam fringilla gravida mi, non lacinia ligula convallis lacinia. Phasellus diam enim, malesuada sit amet pharetra vitae, tincidunt nec erat. Integer sagittis nulla eu lorem pharetra, a convallis nunc placerat. Nunc hendrerit sed libero sed hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer a metus orci. Quisque imperdiet nisl a eleifend dapibus. Proin sagittis nisi ut erat dictum faucibus. Aliquam lacus massa, egestas at maximus sit amet, facilisis eu leo. Pellentesque in lobortis odio. Vestibulum porttitor ante vitae auctor ultricies. Donec pulvinar tempus sapien. Proin ac mollis justo, sed aliquam neque. Aliquam tincidunt eros odio, non facilisis metus mattis non. Pellentesque commodo ut risus quis consequat.</p>
+			</article>
+			<aside>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula sodales dui, sed molestie lacus semper vitae. Integer odio sem, finibus in turpis ac, molestie convallis libero. Duis varius et elit vel eleifend. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus molestie ornare ligula vel tincidunt. In quis nunc non ligula convallis ultrices nec et elit. Mauris tempor enim et eros tincidunt tristique. Phasellus bibendum massa vitae cursus ultrices. Donec at aliquam leo, in viverra mauris. Cras cursus volutpat neque. Nulla facilisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non nibh sit amet nisi sagittis interdum sed dictum risus.</p>
+
+				<p>Proin eleifend justo dolor, eu maximus felis interdum sit amet. Donec sapien nulla, hendrerit quis volutpat ut, rhoncus et erat. Duis consectetur hendrerit lectus. Nulla non elit a orci iaculis blandit. Curabitur augue erat, egestas quis semper sit amet, dictum eu orci. Integer lacus ante, faucibus vitae maximus eget, eleifend id nulla. Curabitur mattis eros et rutrum efficitur.</p>
+			</aside>
+			<footer>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in accumsan diam, sed fermentum elit. Nullam lobortis sem ac pulvinar sollicitudin. Etiam sed neque mi. Aenean eget urna commodo, cursus est sit amet, venenatis velit. Fusce mollis nisl eu arcu tempor, eget vulputate mi tincidunt. Duis nec sodales libero. Phasellus eget arcu sed augue mattis tristique ac dapibus erat.
+			</footer>
+		</section>
+	</body>
+</html>
+
+<!-- Not able to see the background color that was set on the section element because the section element collapsed. you can add a variety of fixes to address this issue, like setting the overflow to hidden or auto, adding an empty div that clear's both the preceding elements or adding a pseudo class that clear's the parent element itself. -->
+
+<!-- They wrote: "The parent element does not contain the floated elements which is why its background color does not paint to the bottom of the taller of the two columns. To contain the floated elements you either need to change the overflow property on the section or use a clear fix solution to clear the floats within the section."
+
+I used the clearfix but either of these would work:
+
+section {
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Works, but may cut off content that is positioned outside of the element */
+  background: #ffffff;
+}
+
+section:after {
+  display: block;
+  clear: both;
+  content: "";
+} -->
+
+<!-- The padding is adding to the width value making the article 530px wide. Because the aside is 300px wide, tha tmakes our total width for both columns 830px. since we dont' have enough width for that in our section, the aside clear to a new row. You can either set box-sizing to border-box (What I did) or reduce the width for the article by 30px
+
+article {
+  float: left;
+  width: 470px;
+  padding-right: 30px;
+  background: #ffffcc;
+}
+ -->
+
+<!--  You can set overflow on a container to have it take up the remaining space within a row of floated elements. This is useful if your last element can take up the leftover space in a variable width layout. -->
+
+<!-- This means that the element with overflow applied (auto or hidden), will extend as large as it needs to encompass child elements inside that are floated (instead of collapsing), assuming that the height isn't declared. -->
+
+<!-- if you haven't used it already you should now use the box-sizing property to ensure that your article actually takes up 70% of row width rather than 70% plus the 30px of right padding -->
+
+<!-- if you previously used a clear fix by using a pseudo element, you cna remove it and isntead clear the floats with the footer element. -->

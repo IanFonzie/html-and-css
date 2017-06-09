@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>Practice Problems: Positioning</title>
+		<meta charset="UTF-8" />
+		<style>
+			/*#positioned {
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #ffffcc;
+				padding: 30px 15px;
+			}*/
+
+			/*#positioned {
+				position: fixed;
+				top: 0;
+				right: 0;
+				background: #ffffcc;
+				padding: 30px 15px;
+			}*/
+
+			/*#positioned {
+				position: absolute;
+				width: 400px;
+				margin-left: -200px;
+				top: 0;
+				left: 50%;
+				background: #ffffcc;
+				padding: 30px 15px;
+				box-sizing: border-box;
+			}*/
+
+			/*#positioned {
+				position: absolute;
+				width: 400px;
+				margin-left: -200px;
+				top: 0;
+				left: 50%;
+				background: #ffffcc;
+				padding: 30px 15px;
+				box-sizing: border-box;
+				z-index: 2
+			}
+
+			#fixed {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background: rgba(0, 0, 0, .6);
+				z-index: 1;
+			}*/
+
+			#positioned {
+				position: absolute;
+				width: 400px;
+				margin-left: -200px;
+				top: 20px;
+				left: 50%;
+				background: #ffffff;
+				padding: 30px 15px;
+				box-sizing: border-box;
+				z-index: 2
+			}
+
+			#fixed {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				height: 100vh;
+				background: rgba(0, 0, 0, .6);
+				z-index: 1;
+			}
+
+			#positioned span {
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: #fcfc99;
+				top: -10px;
+				left: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus suscipit condimentum massa, at rutrum eros aliquam ut. Fusce dolor enim, egestas vitae lorem in, elementum sollicitudin nulla. In rhoncus elit sed diam tempor convallis. Vestibulum et enim eu turpis vulputate pulvinar. Vestibulum et faucibus magna, quis vestibulum nisi. Suspendisse arcu est, vehicula et justo ut, tempus fermentum mauris. Aenean tellus elit, placerat et tempus ut, convallis vel nibh. Fusce commodo erat sapien, in consectetur arcu vulputate vitae. Nullam mattis tristique porttitor. Praesent laoreet facilisis purus ut condimentum.</p>
+
+		<p>Fusce in magna elementum, ultrices lacus eu, pharetra sapien. Donec congue ultricies felis sit amet viverra. Nullam gravida ut mi eget finibus. Nam ornare semper nisi nec sagittis. Pellentesque nec turpis eget nulla hendrerit volutpat id vel sem. Donec blandit a enim nec dictum. Vivamus placerat non nunc vitae aliquet. Ut id lectus nisl. Pellentesque id sagittis elit. Fusce posuere libero at risus laoreet, ac sollicitudin ante ultricies. Vestibulum suscipit non dolor in viverra. Aenean sodales elementum purus non imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu est in nisl auctor imperdiet. Pellentesque imperdiet dapibus velit, volutpat blandit libero consequat non. Duis metus ipsum, venenatis et nunc et, pretium elementum erat.</p>
+
+		<p>Cras ullamcorper faucibus lacus, vitae venenatis dolor facilisis sed. Nullam vestibulum nunc ac nisi congue finibus. Sed placerat condimentum commodo. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus accumsan dui sed faucibus. Nullam egestas feugiat massa eu imperdiet. Integer et erat aliquam, condimentum dui ut, fermentum purus. Maecenas malesuada lectus augue, eu tempus ipsum facilisis at.</p>
+
+		<div id="positioned">
+			I'm positioned!
+			<span></span>	
+		</div>
+		<div id="fixed"></div>
+	</body>
+</html>
+
+<!-- The viewport is the visibile area within the browser. if you are on a web page that is too long to fit within the initial screen, if you scrolled to the bottom fo the page you'd see the bottom part within the view port. The top part would be outside the viewport. -->
+
+<!-- To horizontally cneter a fixed element that is positioned, you can move the element to the center of the window with position and move it back in the opposite direction with negative margin. In our example we're mvoing the element from the left edge to the center of the page and then moving it back tiowards the elft edge by half its width using negative margin -->
+
+<!-- To take up the entirety of the viewport we can use viewport units (vw and bh) to fit 100% of the width and height (100vw and 100vh, respectively). Then set z-index values for both elements to position one on top of the other. -->
