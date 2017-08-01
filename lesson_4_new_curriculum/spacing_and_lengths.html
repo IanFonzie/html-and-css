@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problems: Spacing and Lengths</title>
+	<style>
+		img {
+			/*width: 800px;*/
+			max-width: 800px;
+			/*height: 533px;*/
+			min-width: 500px;
+			width: 100%;
+		}
+
+		body {
+			/*text-align: center;*/
+			margin: 50px;
+		}
+
+		/*div {
+			box-sizing: border-box;
+			display: inline-block;
+			height: 300px;
+			width: 300px;
+		}
+
+		.red {
+			background: #fcc;
+			padding: 20px;
+			margin-right: 20px;
+		}
+
+		.blue {
+			background: #ccf;
+			border: 5px solid black;
+		}*/
+
+		/*ul {
+			background: #a7ceff;
+			border: 10px solid blue;
+			font-size: 0;
+			list-style: none;
+			padding: 0;
+		}
+
+		li {
+			background: #ffc;
+			border: 10px solid red;
+			box-sizing: border-box;
+			display: inline-block;
+			font-size: 1rem;
+			line-height: 120px;
+			margin: -40px 1%;
+			min-height: 120px;
+			text-align: center;
+			width: 23%;
+		}*/
+
+		table {
+		  background: #a7ceff;
+		  width: 100%;
+		  border-spacing: 10px;
+		}
+
+		td {
+		  background: #ffffcc;
+		  text-align: center;
+		  width: 25%;
+		}
+	</style>
+</head>
+<body>
+	<!-- <img src="H&#244;tel_des_Invalides_-_20150801_16h09_(10630).jpg" alt="Les Invalides" /> -->
+	<!-- <div class="red"></div>
+	<div class="blue"></div> -->
+	<!-- <ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+	</ul> -->
+
+	<table>
+		<tr>
+			<td>Element 1</td>
+			<td>Element 2 - this element is wider than the others by a bunch.</td>
+			<td>Element 3</td>
+			<td>Element 4</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+<!-- Three ways to center this image horizontally:
+
+easiest is to text-align center onthe body element (what I did). 
+This needs to be applied to the body element because text-align doesn't work with inline elements. It doesn't do anything to the container element itself; instead it aligns the inline and inline-block elements contained within the container.
+
+Another approach is to set the left and right margins for the image to auto which is useful for when you have other content around the iamge and don't want that content center aligned. width: auto only works for block elements.
+
+i.e. 
+
+img {
+	display: block;
+	width: 800px;
+	margin: 0 auto;
+}
+
+last technique uses css positioning and transforms.
+
+i.e.
+
+img {
+	position: absolute;
+	left: 50%;
+	width: 800px;
+	transform: translateX(-50%);
+}
+
+This doesn't work with statically psoitoned leement, which means you need to apply some other position value which may lead to unwanted changes int he documen flow. if we try to add a paragraph before and after the img tag, the browser shoves the two paragraphs together above and to the left of the picture. If you want one paragraph below and to the left of use position: relative instead. when you narrow the width of your browser to less than the image width the browser cuts it off to keep it centered in the viewport and it doesn't provide horizontal scroll bars. The same thing happens with positiona boslute and position: fixed.
+ -->
+
+ <!-- Blue box is wider because the border is being added to the width of the element because its box-sizing property is set to content-box. Padding and border are added to the dimensions of the element -->
+
+<!--  setting the box-sizing property to border-box will include the padding and borders as part of the total dimensions -->
+
+<!-- need to remove 2% from each element's width to account for the 1% margin being added to both sides of the li elements -->
+
+<!-- Don't forget to explicitly set the width for <li> elements -->
+
+<!-- margin property has no effect on table cells. use css border-spacing instead; need to have a border-collapse property of separate in order to use this. Can't fine tune spacing between cells since it applies to the table as a whole. -->

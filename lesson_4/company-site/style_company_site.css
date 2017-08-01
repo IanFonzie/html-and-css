@@ -1,0 +1,392 @@
+/*@import url("whitespace-reset.css");
+*/
+/* Global Styles */
+
+*, 
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: inherit;
+}
+
+body {
+	background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
+	color: #45494d;
+	font: normal 20px "Avenir", Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 75px 0 0 0;
+	text-align: center;
+}
+
+/* Header Styles */
+
+
+h1 a {
+	background: url(images/logo.png) 0 0 no-repeat;
+	display: block;
+	height: 243px;
+	margin: 0 auto 50px;
+	text-indent: -9000px;
+	width: 298px;
+}
+
+nav {
+	font-size: 24px;
+	padding-bottom: 35px;
+	text-transform: uppercase;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+nav li {
+ display: inline-block;
+ padding: 0 42px;
+}
+
+nav a {
+	color: #cacaca;
+	text-decoration: none;
+}
+
+nav .active {
+	color: #6db9ff;
+	font-weight: bold;
+}
+
+/* Main Styles */
+
+main {
+	background: #fff;
+	padding-top: 75px;
+}
+
+.column {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+h2:before,
+h2:after {
+	content: "\2022";
+	display: inline-block;
+	font-size: 22px; 
+	padding: 0 24px;
+	vertical-align: 5px;
+}
+
+h3 {
+	color: #3e59b2;
+	font: bold 24px "Avenir", Helvetica, Arial, sans-serif;
+}
+
+article {
+	padding-bottom: 100px;
+}
+
+article p {
+	padding: 0 110px;
+	text-align: justify; 
+}
+
+/*Project Styles*/
+
+#projects figure {
+	margin: 0 0 23px 0;
+	padding: 0 30px 20px 30px;
+}
+
+#projects img {
+	display: block;
+	width: 100%;
+}
+
+#projects article {
+	border-bottom: 1px solid #cccccc;
+	margin-top: 60px;
+	padding-bottom: 30px;
+}
+
+#projects article:first-of-type {
+	margin-top: 0;
+}
+
+#projects .last {
+	border-bottom: none;
+}
+
+/* Team Styles */
+
+#team p {
+	padding: 0 110px;
+	text-align: justify;
+}
+
+#team ul {
+	margin: 120px 0 0 0;
+	padding: 0 0 120px 0;
+}
+
+#team ul a {
+	color: #3e59b2;
+	font: normal 24px "Avenir", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+}
+
+#team li {
+	display: inline-block;
+	margin: 0 30px;
+}
+
+#team img {
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* Footer Styles */
+
+footer {
+	background: #e7e7e7;
+	color: #b2b2b2;
+	padding: 75px 0 55px;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer li a {
+	background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+	display: inline-block;
+	height: 46px;
+	margin: 0 62px;
+	width: 46px;
+	}
+
+footer li .facebook{
+	background-position: 0 -46px;
+}
+
+footer li .email {
+	background-position: 0 -92px;
+}
+
+footer li .instagram {
+	background-position: 0 -138px;
+}
+
+footer p {
+	margin: 0 auto;
+	padding: 20px 0 40px;
+}
+
+/* Tablet Styles */
+
+@media (max-width: 768px) {
+	
+	/* Tablet Global Styles */
+
+	body {
+		padding: 45px 0 0 0;
+	}
+
+	/* Tablet Header Styles */
+
+	h1 a {
+		background-size: 100% 100%;
+		height: 182px;
+		margin-bottom: 30px;
+		width: 223px;
+	}
+
+	nav {
+		padding-bottom: 24px;
+	}
+
+	nav ul {
+		margin: 15px 0 0;
+	}
+
+	/* Tablet Main Styles */
+
+	main {
+		padding-top: 40px;
+	}
+
+	article p {
+		padding: 0 40px;
+	}
+
+	article {
+		padding-bottom: 50px;
+	}
+
+	/* Tablet Project Styles */
+
+	#projects article p {
+		padding: 0 30px;
+	}
+
+	/* Tablet Footer Styles */
+
+	footer li a {
+		margin: 0 32px;
+	}
+
+	footer {
+		padding: 35px 0 15px;
+	}
+}
+
+/* Team Grid Display */
+
+@media (max-width: 875px){
+	#team li {
+		margin: 0;
+		padding-bottom: 30px;
+		width: 48%;
+	}
+
+	#team img {
+		margin: 0 auto;
+	}
+}
+
+/* Mobile Styles */
+
+@media (max-width: 480px) {
+
+	/* Global Mobile Styles */
+
+	body {
+		padding: 0;
+	}
+
+	/* Header Mobile Styles */
+
+	header {
+		padding: 20px;
+	}
+
+	h1 {
+		float: left;
+		margin: 0;
+	}
+
+	h1 a {
+		background-position: -20px 15px;
+		background-size: 90px 73px;
+		color: #fff;
+		font-size: 22px;
+		height: auto;
+		margin: 0;
+		padding: 25px 0 10px 55px;
+		text-decoration: none;
+		text-indent: 0;
+		width: auto;
+		
+	}
+
+	nav {
+		float: right;
+		font-size: 16px;
+		padding: 0;
+	}
+
+	nav ul {
+		margin: 0;
+	}
+
+	nav li {
+		display: block;
+		padding: 0 0 10px 0;
+		text-align: right;
+	}
+
+	nav li:last-child {
+		padding-bottom: 0;
+	}
+
+	header:after {
+		clear:  both;
+		content: "";
+		display: block;
+	}
+
+	/* Main Mobile Styles */
+
+	h2 {
+		font-size: 26px;
+	}
+
+	h2:before, h2:after {
+		vertical-align: 0;
+	}
+
+	article p {
+		font-size: 16px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	/* Project Mobile Styles */
+
+	#projects figure {
+		margin-bottom: 22px;
+	}
+
+	#projects article {
+		padding-bottom: 34px;
+	}
+
+	/* Team Mobile Styles */
+
+	#team p {
+		font-size: 16px;
+		padding: 0 30px;
+	}
+
+	#team ul {
+		font-size: 16px;
+		margin-top: 56px;
+		padding-bottom: 116px;
+	}
+
+	/* Footer Mobile Styles */
+
+	footer {
+		margin-bottom: 0;
+		padding: 16px 0 19px;
+	}
+
+	footer p {
+		font-size: 16px;
+		padding: 20px 0 36px;
+	}
+
+	footer li a {
+		margin: 0 17.5px;
+	}
+
+	footer ul {
+		margin-bottom: 0;
+	}
+}
+
+

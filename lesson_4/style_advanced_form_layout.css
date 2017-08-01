@@ -1,0 +1,154 @@
+@import url("whitespace-reset.css");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font: normal 16px Helvetica, Arial, sans-serif;
+	color: #282827;
+}
+
+form {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.partial {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.first {
+	width: 51%;
+	padding-right: 10px;
+}
+
+.last {
+	width: 49%;
+	padding-right: 0;
+}
+
+.facebook {
+	width: 33.3%;
+}
+
+.twitter {
+	width: 33.3%;
+}
+
+.linkedin {
+	width: 33.3%;
+	padding-right: 0;
+}
+
+.password {
+	width: 50%;
+}
+
+.password_confirmation {
+	width: 50%;
+	padding-right: 0;
+}
+
+h1 {
+	font-size: 28px;
+	font-weight: normal;
+	padding: 24px 0 24px 0;
+}
+
+h2, h2 > label {
+	font: bold 20px Helvetica, Arial, sans-serif;
+	padding-bottom: 19px;
+	color: #282827;
+}
+
+dt + (dd > textarea) {
+	padding-bottom: 0;
+}
+
+dt {
+	padding-bottom: 10px;
+}
+
+label {
+	font: bold 16px Helvetica, Arial, sans-serif;
+	color: #666766;
+	margin-bottom: -1px;
+}
+
+.agreement label {
+	font: normal 14px Helvetica, Arial, sans-serif;
+	float: left;
+	width: 520px;
+	padding-left: 8px;
+	padding-bottom: 25px;
+}
+
+.agreement input[type="checkbox"] {
+	float: left;
+	margin-top: 2px;
+}
+
+.agreement {
+	overflow: hidden;
+}
+
+dd {
+	padding-bottom: 24px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+	height: 2.5rem;
+	width: 100%;
+	border: 1px solid #0066cc;
+	border-radius: 4px;
+	padding: .31rem .5rem;
+	font: normal .875rem Helvetica, Arial, sans-serif;
+	color: #282827;
+}
+
+textarea {
+	height: auto;
+	resize: vertical;
+	max-height: 17.5rem;
+	margin-top: -10px;
+}
+
+/*input[type="text"]:-webkit-input-placeholder {
+	color: #282828;
+}*/
+
+fieldset {
+	background: #ececec;
+	border-left: 4px solid #cdcccb;
+	padding: 1.5rem 2rem;
+	margin-bottom: 2px;
+}
+
+fieldset:last-of-type {
+	margin-bottom: 26px;
+}
+
+input[type="submit"] {
+	border: none;
+	padding: .875rem 2rem;
+	-webkit-appearance: none;
+	-moz-appearnce: none;
+	appearance: none;
+	background: #0066cc;
+	color: #fff;
+	border-radius: 4px;
+	font: normal 1rem Helvetica, Arial, sans-serif;
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+	background: #6095cb
+}
+
+.hidden {
+	display: none;
+}

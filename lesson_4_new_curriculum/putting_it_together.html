@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>title</title>
+    <meta charset="utf-8">
+    <style>
+      html {
+        font-size: 32px;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .box {
+        box-sizing: border-box;
+        display: inline-block;
+        height: 100px;
+        /*width: 33.3333%; width: calc(100% / 3);*/
+        width: 32%;
+        margin-left: 2%;
+      }
+
+      .container {
+        border: 1px solid black;
+        background-color: #ffffe0;
+      }
+
+      .first {
+        border: 1px solid red;
+        background-color: #ff8080;
+        margin-left: 0;
+      }
+
+      .second {
+        border: 1px solid green;
+        background-color: #80ff80;
+        /*margin: 0 2%;*/
+      }
+
+      .third {
+        border: 1px solid blue;
+        background-color: #a0a0ff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="first box">Box 1</div><!--
+      --><div class="second box">Box 2</div><!--
+      --><div class="third box">Box 3</div>
+    </div>
+  </body>
+</html>
+
+<!-- HTML uses divs which have a display model of block, meaning they automatically expand to the full width of the parent element when you omit the wdith. Each appears on a line by itself.
+
+then we specify the heigth for the boxes and set the body margin to 0 or else a white border may be displayed around the edges of the outer box.
+
+for <div> tags the browser automatically sets the display model, width and height based on the content. -->
+
+<!-- Convert to inline block and set the width to 33.3333%. still see small gaps that prevent the entire line from fitting the available space. These are added because of whitespace between the elements. We replace the whitespace witha comment which lets each box render side bys ide without gaps. Change the box-sizing to border-box to include the border and now we get the result we expected. -->
+
+<!-- with gaps of 2% between each both, the boxes must consume 96% of the width or 32% per box so we can set the width accordingly.
+
+we have three boxes and two gaps so we can't specify the margins on all three boxes and expect it to work. if we set a left margin of 2% on every box then the total width becomes 102% and not 100%. if we set a left margin of 1.3333% we can get a width of 100% but there's still a gap to the left of the box. to avoid this set the margin left: 2% on the box class and remove the left margin from the first box by setting it to 0. -->

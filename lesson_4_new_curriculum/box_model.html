@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Box Model: Practice Problems</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<!-- 1) Block: <blockquote>, <form>, <p>, <ul>
+inline: <a>, <em>, <img>, <span>
+inline-block: <input>, <textarea> -->
+
+<!-- Easy to classify most elements as either block or inline. HTML5 spec doesn't explicitly specify the visual formatting model for elements. Browser wirters are given leeway in setting default models, provided the elements behave as described in the standards. typically same default tags are used but some elements lik <input> or <textarea> can be inline or inline-block dependingon the browser. -->
+
+<!-- 2) I said C because widths wouldn't apply to inline elements in B and F. In reality the width would just be ignored, meaning they would print side by side so B, C & F all apply. Block elements won't print side-by-side with any element -->
+
+<!-- 3) 500 + 8 + 40 + 30 = 578 width
+300 + 8 + 20 + 30 = 358 height -->
+
+<!-- Since the display is inline block, can compute the width and height from css properties. For width, 500 pixels + 8 pixels for the left and right borders + 40 pixels for the left and right padding + 10 pixels for the left margin and 20 pixels for the right margin. For the height, 300 pixels + 8 pixels for the top and bottom borders + 20 pixels for the top and bottom padding + 20 pixels for the top margin and 10 pixels for the bottom margin -->
+
+<!-- 4) Same answer as above because sections are block level elements. 578px for the width and 358 px for the height. Because this is a block level element nothing else will appear on the same line as the section. -->
+
+<!-- 5) width and height don't apply to this element. left and right borders and padding and margin apply. Top and bottom padding and borders apply but aren't displayed as expected. Top and bottom margins are not applied at all.
+
+Assuming the element it's the dimensions used in the CSS we would need 500px + 8px + 40px + 30px = 578px width and 300px + 8px + 20px = 328px height -->
+
+<!-- ems are inline so width, height and top and bottom margins are ignored by the browser. Assuming the width and height of the content match the CSS we need 578px width and 328px height (since top and bottom margins don't count). Elements above and below the em may collide witht he em element's border -->
+
+<!-- 6) 500px + 30px = 530px width and 300 + 30px = 330px height -->
+
+<!-- Since the display property is inline block we can calculat ethe height and width from the CSS. we also set the box sizing to border box so we ignore the padding and border to calculate the dimensions. 500px for the content, left and right padding and left and right borders, 10px for the left margin and 20px for the right margin = 530px. 300px for the height, padding and borders + 20ppx for the top margin and 10px for the bottom margin). -->
+
+<!-- 7) as is, the code would not display the two articles side by side. This is because articles are a block level element and block level elements occupy the entire width of their container. In order to fix the code you would simply need to change the display property of the articles to inline-block and setting the box-sizing property to border-box to compensate for the left and right padding and margin -->
