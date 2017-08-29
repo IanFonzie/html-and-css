@@ -1,0 +1,62 @@
+/* Global styles */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: inherit;
+}
+
+body {
+	background: #151515;
+	margin: 0;
+}
+
+/* main styles */
+
+main {
+	background: #333;
+	color: #f0f0f0;
+	font: normal 16px Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	max-width: 1040px;
+	min-width: 640px;
+	padding: 25px 20px 20px 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	border: 15px solid #fff;
+	display: block;
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	margin-top: 10px;
+}
+
+ul {
+	font-size: 0;
+	margin: 30px -15px 0 -15px;
+	padding: 0;
+}
+
+ul li {
+	display: inline-block;
+	padding: 0 15px;
+	width: 25%;
+}
+
+li img {
+	border-width: 3px;
+}

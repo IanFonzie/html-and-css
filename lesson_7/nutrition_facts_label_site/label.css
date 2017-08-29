@@ -1,0 +1,190 @@
+/* Global Styles */
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	box-sizing: inherit;
+	font: 28px Helvetica, Arial, sans-serif;
+}
+
+main {
+	border: 2px solid black;
+	padding: 0.357142857rem 0.535714286rem;
+	width: 680px;
+}
+
+dl {
+	margin: 0;
+}
+
+dt, dd {
+	display: inline;
+}
+
+dd {
+	margin: 0;
+}
+
+th,
+td {
+	padding: 0;
+}
+
+/* Header Syles */
+
+h1 {
+	margin: 0;
+}
+
+header {
+	border-bottom: 30px solid black;
+	padding-bottom: 5px;
+}
+
+/* Table Styles */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+/* Thead Styles */
+
+header + table thead {
+	border-bottom: 15px solid black;
+}
+
+thead td {
+	padding: 5px 0;
+}
+
+thead td:last-child {
+	text-align: right;
+}
+
+thead td[colspan="2"] dt {
+	font-weight: bold;
+}
+
+header + table th {
+	border-bottom: 1px solid black;
+	padding: 10px 0;
+	text-align: left;
+}
+
+/* Tbody Styles */
+
+header + table tbody:first-of-type {
+	border-bottom: 20px solid black;
+}
+
+sup {
+	padding-right: 1px;
+	vertical-align: 3px;
+}
+
+header + table tbody tr:nth-child(n + 2) td:not(.indent) {
+		border-top: 1px solid black;
+		padding-bottom: 2px;
+		padding-top: 2px;
+}
+
+.indent {
+	width: 28px;
+}
+
+header + table tbody tr td:last-of-type:not(:only-child){
+	font-weight: bold;
+	text-align: right;
+}
+
+header + table tbody td.indent + td[colspan="2"] {
+	font-weight: normal;
+	text-align: left;
+}
+
+header + table tbody tr:first-child td {
+	font-weight: bold;
+	padding: 11px 0 1px 0;
+	text-align: right;
+}
+
+header + table tbody:first-of-type tr td:first-child:not(.indent) dt {
+	font-weight: bold;
+}
+
+/* Vitamin Tbody */
+
+header + table tbody:last-of-type {
+	border-bottom: 1px solid black;
+}
+
+header + table tbody:last-of-type td {
+	font-weight: normal;
+}
+
+header + table tbody:last-of-type td[colspan="3"] {
+	font-weight: normal;
+}
+
+table tbody:last-of-type tr:first-child td {
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+table tbody:last-of-type dt {
+	float: left;
+}
+
+table tbody:last-of-type dd {
+	float: right;
+}
+
+/* Paragraph Styles */
+
+p {
+	font-size: 0.9rem;
+	margin: 14px 0 15px;
+	padding-left: 19px;
+	text-indent: -0.7rem;
+}
+
+/* Second Table Styles */
+
+footer table {
+	margin-bottom: 5px;
+}
+
+footer {
+	font-size: 0.8rem;
+}
+
+footer tbody {
+	border: none;
+}
+
+footer th {
+	border-bottom: 1px solid black;
+	font-weight: normal;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	text-align: left;
+}
+
+footer td:first-child {
+	width: 37%;
+}
+
+footer td {
+	padding-bottom: 2px;
+	padding-top: 2px;
+	width: 21%;
+}
+
+footer td.indent {
+	text-indent: 1.2rem;
+}

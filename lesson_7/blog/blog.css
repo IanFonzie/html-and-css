@@ -1,0 +1,288 @@
+@import url("whitespace-reset.css");
+
+body {
+	color: #45494d;
+	font: normal 20px Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #50c3af;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 36px;
+	padding: 0 0 20px 0;
+}
+
+h3 {
+	font-size: 16px;
+	padding: 0 0 35px 0;
+	text-transform: uppercase;
+}
+
+p {
+	line-height: 150%;
+	text-align: justify;
+}
+
+::selection {
+	background: #50c3af;
+	color: #fff;
+}
+
+body > header {
+	background: #3d3d3d;
+	padding: 130px 0 50px 0;
+}
+
+body > header h1 {
+	background: transparent url("images/logo.png") 50% 100% no-repeat;
+	font: normal 68px Helvetica, Arial, sans-serif;
+	letter-spacing: 20px;
+	margin: 0 0 135px 0;
+	padding: 0 0 125px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body > header h1 a {
+	color: #fff;
+}
+
+nav ul {
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+}
+
+nav a.active {
+	color: #50c3af;
+}
+
+nav a:hover {
+	color: #f5dc39
+}
+
+nav li {
+	display: inline;
+	padding: 0 25px;
+	text-transform: uppercase;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 1000px;
+	overflow: hidden;
+	padding: 80px 0 90px;
+}
+
+#content {
+	float: left;
+	padding: 0 11.5% 0 0;
+	width: 65%;
+}
+
+#sidebar {
+	background: #f6f7f8;
+	padding: 40px;
+	overflow: hidden;
+}
+
+article {
+	padding: 0 0 65px 0;
+}
+
+article p {
+	padding: 0 0 15px 0;
+}
+
+article h2 a {
+	color: inherit;
+}
+
+article h2 a:hover {
+	color: #50c3af;
+}
+
+#sidebar ul {
+	font-size: 14px;
+	list-style: url("images/blt_ul.png");
+	padding: 0 0 115px 20px;
+}
+
+#sidebar li {
+	padding: 0 0 5px 0;
+}
+
+#sidebar li a {
+	color: #787b80;
+}
+
+#sidebar p {
+	color: #787b80;
+	font-size: 14px;
+}
+
+.button {
+	background: #50c3af;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	padding: 5px 25px;
+	-webkit-appearance: none;
+}
+
+.pagination a.disabled {
+	background: #d2d5da;
+	cursor: default;
+}
+
+.pagination a.next {
+	margin-left: 25px;
+}
+
+footer {
+	border-top: 1px solid #d0d0d0;
+	color: #7e8287;
+	font-size: 12px;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 15px 0 30px 0;
+}
+
+.comments img {
+	border-radius: 100%;
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+.comments h3 {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 0;
+	text-transform: none;
+	vertical-align: 1px;
+}
+
+.comments header {
+	padding: 0 0 24px 0;
+}
+
+.comments article {
+	padding: 0 0 30px 0;
+}
+
+.comments article:last-of-type {
+	padding-bottom: 55px;
+}
+
+form dt {
+	font-weight: bold;
+	padding: 0 0 5px 0;
+}
+
+form dd {
+	padding: 0 0 15px 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font: normal 15px Helvetica, Arial, sans-serif;
+	height: 38px;
+	padding: 5px 10px;
+	width: 450px;
+}
+
+textarea {
+	height: 140px;
+	resize: none;
+	width: 100%;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #999999;
+}
+input[type="email"]:-moz-placeholder {
+  color: #999999;
+}
+input[type="email"]::-moz-placeholder {
+  color: #999999;
+}
+input[type="email"]:-ms-input-placeholder {
+  color: #999999;
+}
+
+@media (max-width: 768px) {
+	body > header {
+		padding: 40px 0 20px;
+	}
+
+	body > header h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	#content {
+		float: none;
+		padding: 0 25px 50px 25px;
+		width: auto;
+	}
+
+	#sidebar .block {
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+	}
+
+	#sidebar ul {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	body > header {
+		padding-bottom: 0;
+	}
+
+ 	body > header h1 {
+	 	background-size: 90% auto;
+	 	margin: 0 0 50px 0;
+	 	padding: 0 0 90px 0;
+	}
+
+	nav li {
+		box-sizing: border-box;
+		display: inline-block;
+		padding: 10px 0;
+		width: 49%;
+	}
+
+	#sidebar {
+		background: transparent;
+		padding: 0 25px;
+	}
+
+	#sidebar .block {
+		background: #f6f7f8;
+		display: block;
+		margin: 0 0 25px 0;
+		padding: 20px;
+		width: auto;
+	}
+}
